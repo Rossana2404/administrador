@@ -1,0 +1,196 @@
+body {
+  height: 100%;
+  padding-top: 10px;
+  
+}
+
+.text-color {
+  color: #8B4513; /* Color de texto café */
+}
+
+section {
+  height: calc(90% - 50px);
+}
+
+.affix {
+  padding: 0px;
+  -webkit-transition: padding 0.2s linear;
+  -moz-transition: padding 0.2s linear;
+  -o-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+}
+
+.affix-top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: padding 0.5s linear;
+  -moz-transition: padding 0.5s linear;
+  -o-transition: padding 0.5s linear;
+  transition: padding 0.5s linear;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.welcome-text {
+  color: #8B4513;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.img-logo {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo img {
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.login-registro {
+  display: flex;
+  align-items: center;
+  text-align: right; /* Alinea el contenido a la derecha */
+  margin-right: 10px; /* Margen derecho para espacio en el margen derecho de la página */
+}
+
+.login-registro a {
+  text-decoration: none;
+  color: #8B4513;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.login-registro img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-logo img {
+    width: 200px;
+  }
+
+  .welcome-text {
+    font-size: 30px;
+  }
+
+  .login-registro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-registro a {
+    margin: 5px 0;
+  }
+
+  .login-registro img {
+    margin: 5px 0;
+  }
+}
+
+
+
+/* Estilo para la galería de imágenes */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Estilo para los enlaces de imágenes */
+.image-link {
+  text-decoration: none;
+}
+
+/* Estilo para la galería de imágenes */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en dispositivos pequeños */
+}
+
+/* Estilo para cada imagen en la galería */
+.image-link {
+  flex: 1; /* Hace que cada imagen tome un espacio igual dentro de la galería */
+  max-width: calc(25% - 20px); /* Establece un ancho máximo para cada imagen (25% del contenedor menos el espacio entre las imágenes) */
+  margin: 10px; /* Espacio entre las imágenes */
+  text-align: center; /* Centra el contenido dentro de cada imagen */
+}
+
+.image-link img {
+  max-width: 100%; /* Hace que las imágenes se ajusten al ancho máximo del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+}
+
+/* Estilo para el footer */
+.footer {
+  background-color:#e0766d; /* Color de fondo oscuro */
+  color: #ffffff; /* Color del texto en blanco */
+  padding: 10px 0; /* Espaciado interior del footer */
+}
+
+/* Estilo para los enlaces dentro del footer */
+.footer a {
+  color: #fff; /* Color del texto de los enlaces en blanco */
+  text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+
+/* Estilo para los enlaces al pasar el mouse */
+.footer a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilo para el botón de WhatsApp */
+.btn-success {
+  background-color: #28a745; /* Color de fondo del botón de éxito */
+  color: #fff; /* Color del texto en blanco */
+  border: none; /* Elimina el borde del botón */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  text-decoration: none; /* Elimina la subrayado del botón */
+}
+
+/* Estilo para el botón de WhatsApp al pasar el mouse */
+.btn-success:hover {
+  background-color: #218838; /* Color de fondo del botón de éxito al pasar el mouse */
+}
+
